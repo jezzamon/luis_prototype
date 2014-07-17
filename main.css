@@ -17,7 +17,8 @@
 #placeholder {
 	height: 130px;
 	width: 165px;
-	background-image: url("mariologo.gif");
+    border: 2px white dotted;
+/*	background-image: url("mariologo.gif");*/
 	background-size: cover;
 }
 
