@@ -1,0 +1,300 @@
+
+
+#blackbar {
+	background-color: black;
+	height: 135px;
+	padding-bottom:5px;
+	border-bottom: 5px solid white;
+	
+}
+
+#blackbar #logo {
+	width:1180px;
+	height:130px;
+	margin:0 auto;	
+}
+
+#placeholder {
+	height: 130px;
+	width: 165px;
+	background-image: url("mariologo.gif");
+	background-size: cover;
+}
+
+/* ------------JUMBOTRON SECTION ---------------*/
+
+#jumbotron_container_background {
+	height:423px;	
+	margin: 0 auto;
+	/*background-color:steelblue;*/
+	background : linear-gradient(dodgerblue, black);
+/*	opacity: 0.9;*/
+}
+
+#jumbotron_cont_overlay {
+	height:423px;
+	max-width: 1180px;
+	min-width:1140px;
+
+/*	max-width:90%;*/
+	background-color:rgba(0,0,0,0.3);
+	margin: 0 auto;
+
+}
+
+#jumbotron_cont {
+	height:423px;
+	max-width: 1180px;
+	
+}
+#title  {
+	font-family: 'Raleway', sans-serif;
+	
+
+}
+#title {
+	color:white;
+	font-size: 3.5em;
+	font-weight: bold;
+	padding-left: 40px;
+	padding-top:25px;
+	font-family: "Raleway", sans-serif;
+
+}
+
+#title_text {
+	font-size:1.5em;
+	font-weight:bold;
+	padding-left:40px;
+	width:755px;
+	color:lightskyblue;
+	font-family: 'Raleway', sans-serif;
+	margin-top: -20px;
+	padding-bottom:25px;
+}
+
+.pc_first {
+	margin-left:70px;
+}
+.pc_icon_wrap {
+	display:inline-block;
+	width: 140px;
+	height:78px;
+	background-color:lightgray;
+	border-radius:25px;
+	list-style:none;
+}
+
+#VDI VI Network mydashboard uberdash {
+
+}
+
+#lower_title_text_wrap {
+	display:inline-block;
+	width:750px;
+	height:142px;
+	border-color: red;
+	border-radius: 0px;
+	/*background-color: tomato;*/
+	margin-left: 40px;
+
+}
+
+.lower_title_text_heading {
+	color:white;
+	font-family: 'Source Code Pro';
+	font-weight:bold;
+	font-size: 1.75em;
+}
+
+.lower_title_text {
+	font-family: 'Source Code Pro';
+	font-size:1.15em;
+	color:lightskyblue;
+}
+
+.big_button_wrap {
+	float:right;
+	height:250px;
+	width:250px;
+	border: 5px white solid;
+	border-radius:100%;
+	background-color:rgba(13,121,222,.2);
+	margin-top:-93px;
+	margin-right: 35px;
+}
+.big_button_text {
+	text-align: center;
+	height:60px;
+	padding-top:90px;
+	padding-left:auto;
+	padding-right:auto;
+	font-family: 'Raleway', sans-serif;
+	font-weight:bold;
+	font-size:3.5em;
+	color:white;
+	
+	margin:0 auto;
+}
+
+/*-------BOTTOM PART OF JUMBOTRON---------*/
+
+#bottom_of_jumbotron {
+	height:100px;
+	max-width:1180px;
+	background-color: lightgray;
+	margin: 0 auto;
+}
+
+.bottom_text_box {
+	position:relative;
+	font-family: 'Raleway', sans-serif;
+	display:inline-block;
+	float:left;	
+	padding:20px 0px 50px 15px;
+	height:60px;
+	width:270px;
+	/*width:60%;*/
+
+}
+
+.greenbutton{
+	/*display:inline-block;
+	position:relative;
+	float:left;
+	clear:both;
+	padding:20px 15px 15px 15px;*/
+
+	border: 5px solid white;
+    padding:6px 0px 0px 0px;
+    margin-top:10px;
+    background: rgba(81, 180, 45, 1); 
+    /*rgba(51, 229, 31, 1) */
+    
+    width: 250px;
+    height:60px;
+    border-radius: 25px;
+    list-style: none;
+    margin-left:auto;
+    margin-right:30px;
+    margin-top:20px;
+	
+
+}
+.gbutton {
+	max-width:100%;
+	height:auto;
+	color:white;
+	font-style: bold;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-weight:bold;
+	font-size: 2em;
+}	
+
+/* -------------ADDITIONAL INFO SECTION ------------- */
+.header {
+	text-align:center;
+	clear:both;
+	font-weight:bold;
+	font-size: 3em;
+	padding-top:50px;
+	padding-bottom:40px;
+	font-family: 'Raleway', sans-serif;
+}
+
+#additional_info_bottom {
+	max-width:1180px;
+	margin:0 auto 60px auto;
+	padding-left:15px;
+	font-family: 'Raleway', sans-serif;
+
+	
+
+}
+
+#blackbarbottom {
+	max-width:1180px;
+	height:150px;
+	background-color:black;
+	margin: 0 auto;
+}
+
+#black_bar_bottom_wrap {
+	max-width:90%;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:40px;
+	
+}
+
+#black_bar_bottom_wrap > p {
+	text-align:center;
+	font-size:.90em;
+	font-family: 'Raleway';
+	font-weight:bold;
+	color:darkgrey;
+}
+
+#copywright {
+	text-align:left;
+	font-size:.90em;
+	font-weight: bold;
+	font-family: 'Source Code Pro';
+	color:green;
+
+}
+
+
+
+/*---- RESPONSIVE ----------------*/
+	
+@media screen and (max-width : 980px) {
+
+	#gbutton {
+	position:relative;	
+	display:block;
+	max-width:100%;
+	height:auto;
+	margin: 0 auto;
+	
+	} 
+
+	.greenbutton {
+	display:block;
+	position: relative;
+	margin: 0 auto;
+	padding-left:auto;
+	padding-right:auto;
+	clear:both;
+	/*padding:20px 0px 50px 15px;*/
+	height:auto;
+	width:100%;
+	max-width:250px;
+	
+	
+		
+	}
+
+	.bottom_text_box {
+	position:relative;
+	display:block;
+	margin : 0 auto;
+	padding-left:auto;
+	padding-right:auto;
+	clear:both;
+	padding:20px 0px 50px 15px;
+	height:60px;
+	width:100%;
+
+}
+
+#bottom_of_jumbotron {
+	height:300px;
+	max-width:1180px;
+	background-color: lightgray;
+	margin: 0 auto;
+}
+
+
+
