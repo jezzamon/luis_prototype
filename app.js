@@ -4,7 +4,7 @@ $(document).ready(function(){
     
     $(".pc_first").hover(function(){
         $(".lower_title_text_heading").text("VDI");    
-        $(".lower_title_text").text("Comprehensively track end-to-end all key infrastructure components that affect VDI end-user experiecnce.  Get live to the second awareness of the performance health of your entire VDI without requiring any software agents");
+        $(".lower_title_text").text("Comprehensively track end-to-end all key infrastructure components that affect VDI end-user experience.  Get live to the second awareness of the performance health of your entire VDI without requiring any software agents");
     },function(){
         $(".lower_title_text_heading").text("Intro text here");    
         $(".lower_title_text").text(ipsofacto);
