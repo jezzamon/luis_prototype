@@ -1,4 +1,8 @@
-
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
 
 #blackbar {
 	background-color: black;
@@ -15,11 +19,29 @@
 }
 
 #placeholder {
-	height: 130px;
-	width: 165px;
-    border: 2px white dotted;
-/*	background-image: url("mariologo.gif");*/
-	background-size: cover;
+	position:absolute ;
+    height: 78px;
+	width: 125px;
+    /*border: 2px white dotted;*/
+    top: 27px;
+    left: 102px;
+	/*background-image: url("logo_Xangati.gif");*/
+	/*background-size: cover;*/
+    
+}
+
+.pure-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.subnav {
+    opacity: .5        
+}
+
+.subnav:hover {
+    opacity: 1.0
 }
 
 /* ------------JUMBOTRON SECTION ---------------*/
@@ -29,6 +51,7 @@
 	margin: 0 auto;
 	/*background-color:steelblue;*/
 	background : linear-gradient(dodgerblue, black);
+    background-image: url("bg_LaunchPage2.jpg");
 /*	opacity: 0.9;*/
 }
 
@@ -46,6 +69,8 @@
 #jumbotron_cont {
 	height:423px;
 	max-width: 1180px;
+    position:relative;
+    border-top: 7px solid white;
 	
 }
 #title  {
@@ -81,14 +106,15 @@
 	display:inline-block;
 	width: 140px;
 	height:78px;
-	background-color:lightgray;
+	/*background-color:lightgray;*/
 	border-radius:25px;
 	list-style:none;
+    
 }
 
-#VDI VI Network mydashboard uberdash {
+        
 
-}
+
 
 #lower_title_text_wrap {
 	display:inline-block;
@@ -103,14 +129,14 @@
 
 .lower_title_text_heading {
 	color:white;
-	font-family: 'Source Code Pro';
+	font-family: 'Source Sans Pro';
 	font-weight:bold;
-	font-size: 1.75em;
+	font-size: 2.0em;
 }
 
 .lower_title_text {
-	font-family: 'Source Code Pro';
-	font-size:1.15em;
+	font-family: 'Source Sans Pro';
+	font-size:1.25em;
 	color:lightskyblue;
 }
 
@@ -138,6 +164,65 @@
 	margin:0 auto;
 }
 
+.firewall_container {
+    height: 75px;
+    width:200px;
+    //background-color:red;
+    color:white;
+    position:absolute;
+    right:7%;
+    bottom:1%;
+    font-family: 'Source Sans Pro';
+	font-size:1em;
+    font-weight:bold;
+	color:cornflowerblue;
+    display:inline-block;
+}
+
+.firewall_title {
+    height: 20px;
+    width: 200px;
+    color:lightskyblue;
+    background-color:blue;
+    position:absolute;
+    right: 0px;
+}
+
+.firewall_button_main {
+    height:34px;
+    width:63px;
+    background-color:rgba(1,78,117, 0.9);
+    border-radius:25px;
+    position:relative;
+    bottom:8px;
+    display:inline-block;
+    border: 1px solid darkslategray;
+}
+
+.firewall_button_inside {
+    height:28px;
+    width:28px;
+    border-radius:100%;
+    background-color:rgb(0,128,255);
+    position:absolute;
+    left:6px;
+    top:2px;
+    box-shadow: 3px 2px 3px darkslategray;
+    display:inline-block;
+    border: 1px solid darkslategray;
+    
+}
+
+.firewall_text {
+    height:35px;
+    width:194px;
+    color:steelblue;
+    position:absolute;
+    top:21px;
+    left:71px;
+    line-height:normal;
+    font-weight:normal;
+}
 /*-------BOTTOM PART OF JUMBOTRON---------*/
 
 #bottom_of_jumbotron {
@@ -208,11 +293,16 @@
 	max-width:1180px;
 	margin:0 auto 60px auto;
 	padding-left:15px;
-	font-family: 'Raleway', sans-serif;
-
-	
+	font-family: 'Source Sans Pro', sans-serif;	
 
 }
+
+#additional_info_bottom .header {
+    font-family : "Source Sans Pro";
+    font-weight:300;
+}
+
+
 
 #blackbarbottom {
 	max-width:1180px;
@@ -241,7 +331,7 @@
 	text-align:left;
 	font-size:.90em;
 	font-weight: bold;
-	font-family: 'Source Code Pro';
+	font-family: 'Source Sans Pro';
 	color:green;
 
 }
@@ -296,6 +386,8 @@
 	background-color: lightgray;
 	margin: 0 auto;
 }
+
+
 
 
 

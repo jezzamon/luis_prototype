@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    var ipsofacto = "Hello Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum  ipsum dolor sit amet, consectetur adipiscing elit. Follow these links lorem ipsum:";
+    var ipsofacto = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum  ipsum dolor sit amet, consectetur adipiscing elit. Follow these links lorem ipsum:";
     
     $(".pc_first").hover(function(){
         $(".lower_title_text_heading").text("VDI");    
