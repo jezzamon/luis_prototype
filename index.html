@@ -3,20 +3,14 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Xangati - HTML CSS -integration</title>
-    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet"> 
-    
-    <!-- <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css"> -->
-    
-   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+    <title>Xangati - Management Dashboards</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
-    <!--  <script type="text-/javascript" src="jquery-1.11.1.mins.js"> </script> -->
-    <script type = "text/javascript" src = "app.js"></script>  
-    
-  
+   <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+     <script src="jquery.min.js"> </script> 
+     <script type = "text/javascript" src = "app.js"></script>  
   </head>
 
   <body>
@@ -26,23 +20,27 @@
   			<div id="placeholder">
   		       <div class="pure-img">
                    <img src = "logo_Xangati.gif">
-  			</div>
-  		</div>
+  			   </div>
+  		    </div>
+        <div id="xangati_IP">
+            10.8.60.1 (xangati_UIdemo)
+            </div>
             <div class="firewall_container">
-              <p>Firewall Access</p>
+              <input type="checkbox" name=Firewall_access value=Firewall_access style="vertical-align: middle; margin: 3px;">
+                <label for="Firewall_access">Firewall Access</label> 
               
               <div class = "firewall_text">
               <p> Enable firewall access if the appliance is setup as behind a firewall before you login or submit VTT or launch installer</p>
               </div>
-                <div class="firewall_button_main">
+                <!--<div class="firewall_button_main">
                     <p>OFF</p>
                     <div class="firewall_button_inside"></div>
                      </div>
-                
-            </div>
-  	</div>
+                -->
+            </div> 
+  	     </div>
         
-        </div>
+    </div>
         
 
   	<!--Jumbotron mainbackground - insert image element here-->
@@ -93,45 +91,50 @@
 
           <!-- COMPUTER ICONS -->  
         <ul class="pc_icon_wrap pc_first"><p></p>
-          <li id="VDI">
+          <div id="VDI">
                 <img  class="subnav pure-img" src="product_subnav.png"> 
-            </li>
-            <aside>VDI</aside>
+                <aside id="offsetVDI">VDI</aside>
+            </div>
+            
          </ul> 
          <ul class="pc_icon_wrap VI"><p>
 
-          <li id="VI">
-           <img  class="subnav pure-img" src="product_subnav.png"> 
-             </li>
-             <aside id="offset">VI</aside>
+          <div id="VI">
+                <img  class="subnav pure-img" src="product_subnav.png"> 
+                <aside id="offset">VI</aside>
+            </div>
          </ul> 
          <ul class="pc_icon_wrap Network"><p></p>
-          <li id="Network">
+          <div id="Network">
              <img  class="subnav pure-img" src="product_subnav.png">
-              <aside>Net</aside>
-             </li>
+              <aside id="offsetNET">Net</aside>
+             </div>
          </ul> 
          <ul class="pc_icon_wrap app"><p></p>
-          <li id="mydashboard">
+          <div id="app">
             <img  class="subnav pure-img" src="product_subnav.png"> 
-             </li>
-             <aside>App</aside>
+             <aside id="offsetAPP">App</aside>
+             </div>
+             
          </ul> 
          <ul class="pc_icon_wrap webdash"><p></p>
-          <li id="uberdash">
+          <div id="webdash">
              <img  class="subnav pure-img" src="product_subnav.png"> 
-              <aside>Web</aside>
-             </li>
+              <aside id="offsetWEB">Web</aside>
+             </div>
          </ul> 
           <ul class="pc_icon_wrap mydash"><p></p>
-          <li id="uberdash">
+          <div id="mydash">
              <img  class="subnav pure-img" src="product_subnav.png"> 
               <aside>MyD</aside>
-             </li>
+             </div>
          </ul> 
          
          <br>
-        <!-- LOWER TEXT AREA --> 
+        
+          
+          
+          <!-- LOWER TEXT AREA --> 
         <div id="lower_title_text_wrap">
           <div class="lower_title_text_heading both">
             <p>Welcome </p>
@@ -144,18 +147,14 @@ running on them.</p>
              
         </div>
           
-          
-            
+       
+      </div> <!-- End Jumbotron cont -->
+		</div>	<!-- End Jumbotron cont overlay -->
+	</div> <!--End Jumbotron container background-->
 
-        
-
-
-
-      </div>
-		</div>	
-	</div>
-
-	<!--jumbotron bottom element with buttons -->
+	
+      
+      <!--jumbotron bottom element with buttons -->
 	<div id="bottom_of_jumbotron">
     <div class="row">
       <ul class="col-md-3">
@@ -195,7 +194,7 @@ running on them.</p>
       </ul>
       <ul class="col-md-6">
         <p style="font-weight:bold; font-size:1.35em;">Installing Java</p>
-          <p>Java must be installed on this client in order to view the management dashboards, submit VTT, or launch installer. If Java is already installed, it will be used automatically.<br> If Java is not installed, an attempt will be made to download and install Java automatically. You can install manually by downloading Java software from the <a href-"">Java website.</a>
+          <p>Java must be installed on this client in order to view the management dashboards, submit VTT, or launch installer. If Java is already installed, it will be used automatically.<br> If Java is not installed, an attempt will be made to download and install Java automatically. You can install manually by downloading Java software from the <a href="">Java website.</a>
         </p>
       </ul>
       
@@ -205,7 +204,7 @@ running on them.</p>
     <div id="black_bar_bottom_wrap">
       <p>Xangati is the leading provider of infrastructure performance management with its award-winning Virtual Desktop Infrastructure (VDI) dashboard, Virtual Infrastructure dashboard, and free virtualization software for Vsphere.  These virtualization performance tools allow administrators to easily monitor, report, and troubleshoot infrastructure performance. 
       </p>
-      <p style="color:white;">&#169;2014 - All rights reserved. Privacy Policy</p>
+      <p style="color:white;">&#169;2014 - All rights reserved. <a id="privacy_policy" href="">Privacy Policy</a></p>
     </div>
 
   </div>

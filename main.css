@@ -16,17 +16,24 @@
 #blackbar #logo {
 	width:1180px;
 	height:130px;
-	margin:0 auto;	
+	margin:0 auto;
+    position:relative;
     
 }
 
+#xangati_IP {
+    float:right;
+    color:white;
+    font-weight:bold;
+    font-size:2em;
+}
 #placeholder {
 	position:absolute ;
     height: 78px;
 	width: 125px;
     /*border: 2px white dotted;*/
     top: 27px;
-    left: 102px;
+    left: 34px;
 	/*background-image: url("logo_Xangati.gif");*/
 	/*background-size: cover;*/
     
@@ -39,12 +46,14 @@
 }
 
 .subnav {
-    opacity: .5        
+    opacity: .5;
+   /* width:65px;
+    height:61px;*/
 }
 
-.subnav:hover {
+/*/.subnav:hover {
     opacity: 1.0
-}
+} */
 
 
 /* ------------JUMBOTRON SECTION ---------------*/
@@ -55,6 +64,7 @@
     /*background-color:steelblue;*/
 	background : linear-gradient(dodgerblue, black);
     background-image: url("bg_LaunchPage2.jpg");
+    border-top: 6px solid #095faa;
 /*	opacity: 0.9;*/
 }
 
@@ -73,7 +83,8 @@
 	height:423px;
 	max-width: 1180px;
     position:relative;
-    border-top: 7px solid white;
+    border-top: 6px solid white;
+    bottom:6px;
 	
 }
 #title  {
@@ -124,14 +135,45 @@
     font-family: 'Source Sans Pro';
 	font-weight:bold;
 	font-size: 1.25em;
-    text-align:right;
+    
     color: rgba(255,255,255,0.5);
 }
+
+.aside_highlight {
+    color: red;
+}
+
 
 #offset {
         position:absolute;
     top: 19px;
     left:65px;
+}
+
+#offsetVDI {
+    position:absolute;
+    top: 20px;
+    left: 59px;
+}
+
+#offsetNET {
+    position:absolute;
+    top: 20px;
+    left: 58px;
+}
+
+#offsetAPP {
+    position:absolute;
+    top: 20px;
+    left: 58px;
+
+}
+
+#offsetWEB {
+    position:absolute;
+    top: 20px;
+    left: 55px;
+
 }
 /* ---------------Sidebar-----------*/
 .sidebar {
@@ -179,7 +221,7 @@
 
 
 .buttonmaker_big:hover {
-    background-color: rgb(64, 224, 64);
+    background-color: rgb(42, 190, 42);
 }
 
 .buttonmaker_sidebar{
@@ -201,7 +243,7 @@
 }
 
 .buttonmaker_sidebar:hover {
-    background-color: rgb(64, 224, 64);
+    background-color: rgb(42, 190, 42);
 }
 
 #gbutton_big {
@@ -315,13 +357,13 @@ section li p {
 
 /* --------------FIREWALL ---------*/
 .firewall_container {
-    height: 75px;
-    width:200px;
-    //background-color:red;
-    color:white;
+    height: 70px;
+    width:305px;
+    
+   
     position:absolute;
-    right:14%;
-    bottom:10%;
+    right:2px;
+    bottom:10px;
     
     font-family: 'Source Sans Pro';
 	font-size:1em;
@@ -348,7 +390,7 @@ section li p {
     bottom:8px;
     display:inline-block;
     border: 1px solid darkslategray;
-    left:200px;
+    left:241px;
     
 }
 
@@ -374,7 +416,7 @@ section li p {
 
 .firewall_text {
     height:35px;
-    width:194px;
+    width:237;
     color:steelblue;
     position:absolute;
     top:21px;
@@ -384,6 +426,14 @@ section li p {
     font-size:0.85em;
 }
 
+input[type=checkbox] + label {
+   opacity: 0.5;
+}
+
+input[type=checkbox]:checked +label {
+    opacity:1;
+    font-size:1.15em;
+}
 
 /*-------BOTTOM PART OF JUMBOTRON---------*/
 
@@ -496,18 +546,13 @@ section li p {
 #black_bar_bottom_wrap > p {
 	text-align:center;
 	font-size:.90em;
-	font-family: 'Raleway';
+font-family: 'Source Sans Pro', sans-serif;
 	font-weight:normal;
 	color:darkgrey;
 }
 
-#copywright {
-	text-align:left;
-	font-size:.90em;
-	font-weight: bold;
-	font-family: 'Source Sans Pro';
-	color:green;
-
+#privacy_policy {
+    color: white;
 }
 
 
@@ -560,6 +605,8 @@ section li p {
 	background-color: lightgray;
 	margin: 0 auto;
 }
+
+
 
 
 
